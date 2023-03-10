@@ -3,11 +3,6 @@ from django.core.mail import send_mail
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import request
 from twilio.rest import Client
-from post_office import mail
-from communication_template.models import CommunicationMaster
-from job_posting.models import JobPosting
-from neeri_recruitment_portal import settings
-from neeri_recruitment_portal.settings import BASE_QA_URL
 
 
 @csrf_exempt
